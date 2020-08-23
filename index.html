@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+  <script src="https://kit.fontawesome.com/5b1eeceadd.js" crossorigin="anonymous"></script>
+  <style media="screen">
+
+    body {
+      margin:0;
+      padding:0;
+      background:url("bgimg.jpg");
+      background-size:cover;
+    }
+
+      .navbarcont {
+        position:fixed;
+        width:100%;
+      }
+
+    .links {
+      list-style-type:none;
+      background-color:rgba(5, 46, 66, 1);
+      margin:0;
+      color:white;
+      opacity:0;
+      transition:all 1s ease;
+
+    }
+    .links.colapse {
+      opacity:1;
+      padding:1%;
+      }
+
+    #logo {
+      width:70px;
+      height:70px;
+      margin-right:10px;
+    }
+    .logo {
+      display:flex;
+      color:white;
+    }
+
+    .banner {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: 1% 2%;
+      background-color:rgba(11, 102, 147, 1);
+    }
+    .mar {
+      margin-right:15px;
+    }
+
+    .nav-link {
+      font-size:25px;
+      padding:2% 1%;
+      transition:all 1s ease;
+    }
+
+    .nav-link:hover {
+      background-color:rgba(17, 154, 223, 1);
+    }
+
+    .btns {
+      color:white;
+      opacity:.5;
+      transition:all .4s ease-in;
+    }
+    .btns:hover {
+      transform:rotate(180deg);
+      opacity:1;
+    }
+    .btn.hide {
+      display:none;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="navbarcont">
+<div class="banner">
+  <div class="logo">
+  <img src="one.png" alt="logo" id="logo">
+  <h1>Cyclical ORG</h1>
+  </div>
+
+  <div class="btns">
+  <i class="fas fa-bars fa-2x btn" id="bar"></i>
+  <i class="fas fa-times fa-2x btn hide" id="cross"></i>
+  </div>
+</div>
+
+<div class="navbar">
+<ul class="links">
+  <li class="nav-link"><i class="fas fa-home fa-1x mar"></i>Home</li>
+  <li class="nav-link"><i class="fab fa-html5 fa-1x mar"></i>Html</li>
+  <li class="nav-link"><i class="fab fa-css3-alt fa-1x mar"></i>Css</li>
+  <li class="nav-link"><i class="fab fa-js fa-1x mar"></i>Javascript</li>
+</ul>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="navbar.js"></script>
+</body>
+</html>
